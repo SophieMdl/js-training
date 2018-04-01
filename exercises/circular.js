@@ -12,6 +12,9 @@
 //* Begin of tests
 const assert = require('assert')
 
+const circular = {}
+circular.circular = circular
+
 assert.strictEqual(typeof circular, 'object')
 assert.strictEqual(circular.circular, circular)
 assert.strictEqual(circular.circular.circular, circular)

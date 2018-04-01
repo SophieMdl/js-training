@@ -6,7 +6,11 @@
  *
  */
 
-
+const capitalize = (str) => {
+    str = str.toLowerCase()
+    str = `${str.charAt(0).toUpperCase()}${str.slice(1)}`
+    return str
+}  
 //* Begin of tests
 const assert = require('assert')
 

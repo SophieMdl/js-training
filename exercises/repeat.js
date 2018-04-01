@@ -7,6 +7,13 @@
  * Of course you may not use the method directly
  *
  */
+const repeat = (str, num) => {
+    let strFinal = ''
+    for(let i = 0; i < num; i++){
+        strFinal = strFinal + str
+    }
+    return strFinal
+}
 
 //* Begin of tests
 const assert = require('assert')

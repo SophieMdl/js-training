@@ -9,6 +9,20 @@
  */
 
 // Your code :
+const multiply = (num1, num2) => {
+    let total = 0
+    if(num1 === 0 || num2 === 0){
+        return 0
+    }else if(num1 < 0) {
+        num1 = -num1
+        num2 = -num2
+    }
+    while (num1 > 0) {
+        total += num2
+        num1--
+    }
+    return total
+}
 
 //* Begin of tests
 const assert = require('assert')

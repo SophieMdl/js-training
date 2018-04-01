@@ -9,7 +9,24 @@
  * @notions Primitive and Operators, Functions, Recursion
  */
 
+let total = 0
+
 // Your code :
+const multiply = (num1, num2) => {
+    if(num1 < 0){
+        num1 = -num1
+        num2 = -num2
+        return multiply(num1, num2)
+    }else if(num1 > 0){
+        total += num2
+        num1--
+        return multiply(num1, num2)
+    }else{
+        let totalFinal = total
+        total = 0
+        return totalFinal
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
