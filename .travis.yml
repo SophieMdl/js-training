@@ -1,4 +1,7 @@
-script: ./tester
-language: node_js
-node_js:
-  - "node"
+# script: ./tester
+# language: node_js
+# node_js:
+#   - "node"
+
+language: javascript
+script : ./tester
